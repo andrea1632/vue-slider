@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div @mouseleave="stopTimer" @mouseover="startTimer" id="root">
-        <img class="pic" :src="immagini[index]" alt="">
-        <div @click="prevPhoto" class="thumb-left">
+    <div id="root">
+        <img @mouseover="startTimer" @mouseleave="stopTimer" class="pic" :src="immagini[index]" alt="">
+        <div @mouseover="stopTimer" @click="prevPhoto" class="thumb-left">
             <i class="fa-solid fa-angle-left"></i>
         </div>
-        <div @click="nextPhoto" class="thumb-right">
+        <div @mouseover="stopTimer" @click="nextPhoto" class="thumb-right">
             <i class="fa-solid fa-angle-right"></i>
         </div>
         <div @mouseover="stopTimer" class="effect">

@@ -24,6 +24,7 @@ var app = new Vue(
             },
             stopTimer(){
                 clearInterval(this.timeout)
+                debugger
             },
             startTimer(){ this.timeout = setInterval(() => {
                 this.nextPhoto();
