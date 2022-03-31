@@ -31,16 +31,19 @@
     width: 15px;
     background-color: white;
     border-radius: 50%;
+    cursor: pointer;
 }
 .thumb-right{
     position: absolute;
     right: -30px;
     top: 50%;
     font-size: 2em;
+    cursor: pointer;
 }
 .thumb-left{
     position: absolute;
     left: -30px;
     top: 50%;
     font-size: 2em;
+    cursor: pointer;
 }
