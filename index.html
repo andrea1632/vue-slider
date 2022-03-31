@@ -17,7 +17,7 @@
         <div @click="nextPhoto" class="thumb-right">
             <i class="fa-solid fa-angle-right"></i>
         </div>
-        <div class="effect">
+        <div @mouseover="stopTimer" class="effect">
             <div @click="index = 0" class="counter">
                 <div class="blue-circle" v-if="index == 0"></div>
             </div>
