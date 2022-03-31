@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="root">
+    <div @mouseleave="stopTimer" @mouseover="startTimer" id="root">
         <img class="pic" :src="immagini[index]" alt="">
         <div @click="prevPhoto" class="thumb-left">
             <i class="fa-solid fa-angle-left"></i>
@@ -39,4 +39,3 @@
     <script src="./asset/js/main.js"></script>
 </body>
 </html>
-<!-- @mouseleave="stopTimer" @mouseover="startTimer"  -->
